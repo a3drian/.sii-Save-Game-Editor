@@ -2,8 +2,12 @@ package damageremover;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Logic {
 
@@ -122,7 +126,15 @@ public class Logic {
     }
 
     public void writeToFile() {
+        try {
+            FileWriter writer = new FileWriter("C:\\Users\\Praid\\Desktop\\Java\\DamageRemover\\src\\damageremover\\output\\game.sii");
+            for (String line : this.fileContent) {
+                writer.append(line + "\n");
+            }
+            writer.close();
+        } catch (IOException ex) {
 
+        }
     }
 
 }

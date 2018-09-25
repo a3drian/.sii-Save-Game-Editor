@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class DamageRemover {
 
     public static void main(String[] args) {
-        String url = "C:\\Users\\Praid\\Desktop\\Java\\DamageRemover\\src\\damageremover\\game.sii";
+        String url = "C:\\Users\\Praid\\Desktop\\Java\\DamageRemover\\src\\damageremover\\input\\game.sii";
 
         Logic damageRemoverLogic = new Logic();
         
