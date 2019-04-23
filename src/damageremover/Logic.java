@@ -18,6 +18,8 @@ public class Logic {
 
     private final String WEAR = "wear: &";
     private final String DAMAGE = "cargo_damage: &";
+    
+    private final String JOB = "player_job";
 
     public Logic() {
         this.fileContent = new ArrayList<String>();
